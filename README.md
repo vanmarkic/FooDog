@@ -11,3 +11,6 @@ Florentin gonna make the Main Page.
 Dragan gonna make the community,lifestyle,nutrition.
 Dop gonna make the the footer, hamburger menu and the social button.
 Faysal gonna make the single page.
+
+
+For this project we gonna use : Bulma and SASS technology
