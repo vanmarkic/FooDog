@@ -12,4 +12,6 @@ Dop gonna make the the footer, hamburger menu and the social button.
 Faysal gonna make the single page.
 
 
-For this project we gonna use : ### Bulma and ### SASS technology
+## For this project we gonna use :
+### Bulma
+### SASS
