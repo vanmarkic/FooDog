@@ -1,5 +1,6 @@
 body{
-    margin: 7px;
+    width: 100%;
+    margin: 15px;
 }
 
 
@@ -14,7 +15,7 @@ body{
     object-fit: cover;
       object-position: -10% 40%;
       /* margin-left: 7px; */
-      width: 100%;
+      width: 100vw;
       height: 150px;
      }
      .pageTitle{
@@ -22,14 +23,43 @@ body{
          line-height:50px;
      }
      .categories{
-        color: #fea98f;
+        color: #FF8D6A;
         text-align: center;
         font-size: 10px;
     }
     header{
         background-color: white;
-        border-bottom: black solid 0.5px;
+        border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
         /* height: 60px; */
+    }
+    .roundFarmer{
+        background-color: #FF8D6A;
+        width: 50px;
+        height: 50px;
+        font-size: 7px;
+        border-radius: 50px;
+        /* line-height: 50px; */
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari 3-8 */
+    transform: rotate(-20deg);
+    }
+
+    .main-article{
+        margin: 7px;
+    }
+
+    .sub-image{
+        margin: 15px;
+        width: 100%;
+        background-color: white;
+        border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
+        border-top: rgba(128, 128, 128, 0.787) solid 0.5px;
+        font-size: 7px;
+        color: rgba(128, 128, 128, 0.787);
     }
 }
 
