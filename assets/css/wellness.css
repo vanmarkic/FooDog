@@ -1,3 +1,22 @@
+/* TRANSITIONS ANIM SUR TOUTE LA PAGE */
+
+* {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* TITRE SITE */
+.name {
+  font-size: 6rem;
+  font-family: "Crimson Text", serif;
+  color: #404040;
+}
+
+/* TITRE PAGE */
+
 .banner {
   font-family:  'Open Sans';
   text-align: center;
@@ -11,24 +30,10 @@
   font-size: 24px;
   letter-spacing: 3px;
   text-transform: uppercase;
-
 }
 
-* {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
-.name {
-    font-size: 6rem;
-    font-family: "Crimson Text", serif;
-    color: #404040;
-  }
-
-  
+/*  NAVIGATION */  
 header {
     display: block;
     position: relative;
@@ -44,69 +49,40 @@ header {
 }
 
 header a:hover {
-  opacity: 0.7;
-  
+  opacity: 0.7;  
 }
 
+ /*  MENU HORIZONTAL */
 .menu-item {
-  display: inline;
-  
+  display: inline;  
 }
 
+/* HAUTEUR NAV */
 .main-nav-inner>li>a {
   display: inline-block;
   padding: 0 20px;
   line-height: 60px;
   height: 60px;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
 }
 
-.main-nav-inner {
-  display: inline-block;
-  position: static;
-  margin: 0;
-}
-
-
-
-
+/* STYLE MENU */
 li.menu-item a {
-    font-family: "Open Sans";
-  font-weight: 600;
-  color: #303336;
-  padding: 0 20px;
-
- 
+font-family: "Open Sans";
+font-weight: 700;
+color: #303336;
+padding: 0 20px;
 }
-
-li.menu-item a:hover {
-    text-decoration: none !important;
-    border-bottom: 3px solid #ff8d6a !important;
-    color: #4b4f54;
-  }
-
-
-
 
 li.menu-item a:hover {
   text-decoration: none !important;
   border-bottom: 3px solid #ff8d6a !important;
-  }
-
-.footer {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
+
+
+
+
+
+
 
 /* FLORENTIN */
 
@@ -244,3 +220,13 @@ header {
   height: 150px;
 }
 
+.footer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
