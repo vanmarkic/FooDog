@@ -10,175 +10,287 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/foot.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="./css/style768px.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="./css/style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1 class="name">FooDog</h1>
-            <nav>
-                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </nav>
+    <aside class="destkops">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-search"></i>
+    </aside>
 
-            <aside>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fas fa-search"></i>
-            </aside>
+    <div class="container">
+
+        <header class="header-mobile">
+            <div class="columns is-mobile">
+                <div class="column is-1">
+                    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a></div>
+                <div class="column is-10">
+                    <h1 class="pageTitle">FooDog</h1>
+                </div>
+                <img src="./assets/images/search.svg" class="searchIcon" width="17px" alt="">
+            </div>
+        </header>
+
+        <header class="header-destkops">
+            <h2 class="name">FooDog</h2>
+            <nav>
+                <ul class="main-nav-inner">
+                    <li class="menu-item"><a href="nutrition.html">NUTRITION</a></li>
+                    <li class="menu-item"><a href="wellness.html">WELLNESS</a></li>
+                    <li class="menu-item"><a href="lifestyle.html">LIFESTYLE</a></li>
+                    <li class="menu-item"><a href="community.html">COMMUNITY</a></li>
+                </ul>
         </header>
 
         <main>
             <section class="wellness">
-                <article class="groupe">
-                    <img class="size" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="category">WELLNESS</p>
-                    <p class="description">5 REASONS YOUR DOG IS VOMITING</p>
-                </article>
+                <div class="left-wellness">
+                    <article class="groupe">
+                        <img class="size" src="./img/dog.jpg" alt="Dog">
+                        <p class="category">WELLNESS</p>
+                        <p class="description">5 REASONS YOUR DOG IS VOMITING</p>
+                    </article>
+                </div>
 
-                <article class="groupe">
-                    <img class="size" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description">TOP 14 FRESH SNACKS FOR DOGS</p>
-                </article>
+                <div class="right-wellness">
+                    <div class="right-wellness-up">
+                        <article class="groupe">
+                            <img class="size" src="./img/chien.jpg" alt="Dog">
+                            <p class="description">TOP 14 FRESH SNACKS FOR DOGS</p>
+                        </article>
 
-                <article class="groupe">
-                    <img class="size" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description">WHY SKINNY DOGS LIVE LONGER</p>
-                </article>
+                        <article class="groupe">
+                            <img class="size" src="./img/wellness-right2.jpg" alt="Dog">
+                            <p class="description">WHY SKINNY DOGS LIVE LONGER</p>
+                        </article>
+                    </div>
+                    <div class="right-wellness-down">
+                        <article class="groupe">
+                            <img class="size" src="./img/wellness-right.jpg" alt="Dog">
+                            <p class="description">THE 10 MOST DANGEROUS FOOD FOR DOG</p>
+                        </article>
 
-                <article class="groupe">
-                    <img class="size" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description">THE 10 MOST DANGEROUS FOOD FOR DOG</p>
-                </article>
+                        <article class="groupe">
+                            <img class="size" src="./img/wellness-right3.jpg" alt="Dog">
+                            <p class="description">THE HISTORY OF COMMERCIAL PET FOOD: A GEAT AMERICAN MARKETING STORY</p>
+                        </article>
+                    </div>
+                </div>
 
-                <article class="groupe">
-                    <img class="size" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description">THE HISTORY OF COMMERCIAL PET FOOD: A GEAT AMERICAN MARKETING STORY</p>
-                </article>
             </section>
 
-            <div class="separation">
+            <div class="separation featured-separation">
                 <p class="ligne">FEATURED POST</p>
             </div>
 
             <section class="featured">
                 <article class="groupe">
-                    <img class="size-half-featured" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
+                    <img class="size-half-featured" src="./img/featured-img1.jpg" alt="Dog">
                     <p class="category">FEATURED NUTRITION</p>
-                    <p class="description">5 REASONS YOUR DOG IS VOMITING</p>
+                    <p class="description">The Truth About Table Scraps for Dogs</p>
                 </article>
 
+                <div class="separation destkops">
+
+                </div>
+
                 <article class="groupe">
-                    <img class="size-half-featured" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
+                    <img class="size-half-featured" src="./img/featured-img2.jpg" alt="Dog">
                     <p class="category">FEATURED NUTRITION</p>
-                    <p class="description">5 REASONS YOUR DOG IS VOMITING</p>
+                    <p class="description">Does Your Dog Need Probiotics, Too?</p>
                 </article>
 
-                <article class="groupe">
-                    <img class="size-half-featured" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="category">WELLNESS</p>
-                    <p class="description">5 REASONS YOUR DOG IS VOMITING</p>
-                </article>
+                <div class="separation destkops">
+
+                </div>
 
                 <article class="groupe">
-                    <img class="size-half-featured" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
+                    <img class="size-half-featured" src="./img/featured-img3.jpg" alt="Dog">
                     <p class="category">WELLNESS</p>
-                    <p class="description">5 REASONS YOUR DOG IS VOMITING</p>
+                    <p class="description">Cooking for Your Dog? Watch Out for These Nutrient Deficiencies</p>
                 </article>
             </section>
 
-            <div class="separation">
+            <div class="separation latest-separation">
                 <p class="ligne">LATEST POST</p>
             </div>
 
             <section class="latest">
-                <article class="groupe">
-                    <span class="category-thumbnail">
-                        <p>NUTRITION</p>
-                    </span>
-                    <img class="size-latest" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description-down">5 REASONS YOUR DOG IS VOMITING</p>
-                    <div class="separation">
+                <div class="ranger">
+                    <article class="groupe">
+                        <span class="category-thumbnail">
+                            <p>NUTRITION</p>
+                        </span>
+                        <img class="size-latest" src="http://kireys.com/wp-content/uploads/2018/07/10-summer-tips-dogs.jpg"
+                            alt="Dog">
+                        <p class="description-down">How Balto the Sled Dog Paved the Way for Modern Working Dogs</p>
+                        <div class="separation mobile">
 
-                    </div>
-                </article>
+                        </div>
+                    </article>
 
-                <article class="groupe">
-                    <span class="category-thumbnail">
-                        <p>NUTRITION</p>
-                    </span>
-                    <img class="size-latest" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description-down">5 REASONS YOUR DOG IS VOMITING</p>
-                    <div class="separation">
+                    <article class="groupe">
+                        <span class="category-thumbnail">
+                            <p>Community</p>
+                        </span>
+                        <img class="size-latest" src="https://thenypost.files.wordpress.com/2018/05/180516-woman-mauled-by-angry-wiener-dogs-feature.jpg?quality=90&strip=all&w=618&h=410&crop=1"
+                            alt="Dog">
+                        <p class="description-down">Superfoods in Your Kitchen: Carrots for Dogs</p>
+                        <div class="separation mobile">
 
-                    </div>
-                </article>
+                        </div>
+                    </article>
+                </div>
 
-                <article class="groupe">
-                    <span class="category-thumbnail">
-                        <p>NUTRITION</p>
-                    </span>
-                    <img class="size-latest" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description-down">5 REASONS YOUR DOG IS VOMITING</p>
-                    <div class="separation">
+                <div class="ranger">
+                    <article class="groupe">
+                        <span class="category-thumbnail">
+                            <p>NUTRITION</p>
+                        </span>
+                        <img class="size-latest" src="https://boygeniusreport.files.wordpress.com/2018/03/beagle-dog.jpg?quality=98&strip=all&w=782"
+                            alt="Dog">
+                        <p class="description-down">Ten Tips For Keeping Your Dog Safe This July 4th</p>
+                        <div class="separation mobile">
 
-                    </div>
-                </article>
+                        </div>
+                    </article>
 
-                <article class="groupe">
-                    <span class="category-thumbnail">
-                        <p>LIFESTYLE</p>
-                    </span>
-                    <img class="size-latest" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description-down">5 REASONS YOUR DOG IS VOMITING</p>
-                    <div class="separation">
+                    <article class="groupe">
+                        <span class="category-thumbnail">
+                            <p>Wellness</p>
+                        </span>
+                        <img class="size-latest" src="https://data.whicdn.com/images/310592877/original.jpg?t=1523534081"
+                            alt="Dog">
+                        <p class="description-down">Why Two Fathers Founded The Farmer’s Dog</p>
+                        <div class="separation mobile">
 
-                    </div>
-                </article>
+                        </div>
+                    </article>
+                </div>
+                <div class="ranger">
+                    <article class="groupe">
+                        <span class="category-thumbnail">
+                            <p>COMMUNITY</p>
+                        </span>
+                        <span class="category-thumbnail">
+                            <p>LIFESTYLE</p>
+                        </span>
+                        <img class="size-latest" src="https://article.images.consumerreports.org/prod/content/dam/CRO%20Images%202018/Health/March/CR-Health-InlineHero-toxic-food-for-dogs-0318"
+                            alt="Dog">
+                        <p class="description-down">How to Keep Your Labrador’s Skin and Coat Healthy</p>
+                        <div class="separation mobile">
 
-                <article class="groupe">
-                    <span class="category-thumbnail">
-                        <p>COMMUNITY</p>
-                    </span>
-                    <span class="category-thumbnail">
-                        <p>LIFESTYLE</p>
-                    </span>
-                    <img class="size-latest" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description-down">5 REASONS YOUR DOG IS VOMITING</p>
-                    <div class="separation">
+                        </div>
+                    </article>
 
-                    </div>
-                </article>
+                    <article class="groupe">
+                        <span class="category-thumbnail">
+                            <p>NUTRITION</p>
+                        </span>
+                        <img class="size-latest" src="https://www.fetchpetcare.com/wp-content/uploads/2018/09/04-How-to-Pick-the-Best-Dog-Breed-for-You_141945937-Olena-Brodetska-760x506.jpg"
+                            alt="Dog">
+                        <p class="description-down">Why National Pet Day is More Than Just a Holiday</p>
+                        <div class="separation mobile">
 
-                <article class="groupe">
-                    <span class="category-thumbnail">
-                        <p>NUTRITION</p>
-                    </span>
-                    <img class="size-latest" src="./assets/images/baptist-standaert-346832-unsplash.jpg" alt="Dog">
-                    <p class="description-down">5 REASONS YOUR DOG IS VOMITING</p>
-                    <div class="separation">
+                        </div>
+                    </article>
+                </div>
 
-                    </div>
-                </article>
-
-                <div class="nav-article">
+                <div class="nav-article mobile">
                     <a class="button is-dark cercle">1</a>
                     <a class="button cercle">2</a>
                     <span>-</span>
                     <a class="button cercle">15</a>
                     <a class="button cercle">></a>
                 </div>
+
+                <div class="separation mobile">
+
+                </div>
             </section>
 
         </main>
+
+        <footer>
+            <div class="footerPage">
+
+                <div id="socmedia">
+
+                    <ul>
+                        <a href="https://www.facebook.com" target="blank" rel="nofollow">
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+
+                            </li>
+                        </a>
+
+                        <a href="https://uk.linkedin.com" target="_blank" rel="nofollow">
+                            <li>
+                                <i class="fab fa-linkedin-in"></i>
+
+                            </li>
+                        </a>
+
+                        <a href="https://twitter.com" target="_blank" rel="nofollow">
+                            <li>
+                                <i class="fab fa-twitter"></i>
+
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div id="categories">
+                    <ul>
+
+                        <li><a href="#communities" target="_blank">Community</a></li>
+                        <li><a href="#feaTure" target="_blank">Feature</a></li>
+                        <li><a href="#lifeStyle" target="_blank">Lifestyle</a></li>
+                        <li><a href="#nutriTion" target="_blank">Nutrition</a></li>
+                        <li><a href="#wellNess" target="_blank">Wellness</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </footer>
 
     </div>
 
 </body>
 
 </html>
+
+
+
+
+
+
+<!-- /*
+
+<h1 class="name">FooDog</h1>
+<nav>
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+</nav>
+
+<aside>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-search"></i>
+</aside>
+
+*/ -->
