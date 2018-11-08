@@ -1,3 +1,98 @@
+body {
+  position: relative;
+ margin: auto;
+  
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* .is-vertical-center {
+  display: ;
+  align-items: center;
+} */
+
+
+/*  SECTION ARTICLES */
+
+.description {
+  margin: auto 0;  
+}
+
+.description * {
+  margin : 10px 0;
+}
+
+
+.description a {
+  color: #303336;
+}
+
+
+.meta>*:first-child:before {
+
+}
+
+.meta>*:after {
+  display: inline-block;
+  content: '|';
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+/* LIGNE QUI BOUGE CATEGORIE */
+.underline {
+  position: relative;
+}
+
+.underline > a:hover:after {
+  width:100%;
+}
+
+.underline > a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0%;
+    left: 0;
+    height: 1px;
+    background-color: rgba(26,26,26,.6);
+    bottom: -1px;
+    transition: width .3s linear;
+}
+
+.artitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.artitle:hover {
+  text-decoration: none !important;
+  border-bottom: 3px solid #ff8d6a !important;
+}
+
+
+
+.main {
+  max-width: 1170px;
+  margin:auto;
+}
+
+#articles {
+  display: block;
+ margin:auto;
+  
+  max-width: 1170px;
+
+  padding: 20px;
+}
+
+article {
+  
+}
+
+
 /* TRANSITIONS ANIM SUR TOUTE LA PAGE */
 
 * {
@@ -10,6 +105,7 @@
 
 /* TITRE SITE */
 .name {
+  text-align: center;
   font-size: 6rem;
   font-family: "Crimson Text", serif;
   color: #404040;
@@ -35,6 +131,7 @@
 
 /*  NAVIGATION */  
 header {
+  text-align: center;
     display: block;
     position: relative;
     border-bottom: 1px solid #f2f2f2;
@@ -48,7 +145,7 @@ header {
      
 }
 
-header a:hover {
+a:hover {
   opacity: 0.7;  
 }
 
@@ -123,16 +220,13 @@ li.menu-item a:hover {
 /* FAYSAL */
 
 /* .container {
-  display: flex;
-  flex-direction: column;
+  display: ;
+  -direction: column;
 } */
 
 /*--------HEADER--------*/
 
-header {
-  position: relative;
-  text-align: center;
-}
+
 
 /*  */
 
@@ -173,7 +267,7 @@ header {
   padding: 0;
 } */
 
-/* .category {
+/* . {
   position: absolute;
   top: 0;
   left: 20px;
@@ -206,8 +300,8 @@ header {
 /*--------FEATURED--------*/
 
 .featured {
-  display: flex;
-  flex-direction: row;
+  display: ;
+  -direction: row;
 }
 
 .size-half-featured {
