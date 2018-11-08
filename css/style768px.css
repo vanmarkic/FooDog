@@ -72,9 +72,7 @@ li.menu-item a:hover {
     border-bottom: 3px solid #ff8d6a !important;
 }
 
-.header-mobile {
-    display: none;
-}
+
 
 .header-destkops {
     display: hidden;
@@ -84,6 +82,7 @@ li.menu-item a:hover {
 
 .wellness {
     max-width: 100%;
+    text-align: center;
 }
 
 .groupe {
@@ -163,7 +162,6 @@ aside {
 }
 
 
-
 /*---------LATEST-------*/
 
 .mobile {
@@ -179,6 +177,11 @@ aside {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
+}
+
+.latest .groupe {
+    width: 50%;
 }
 
 .latest article {
@@ -200,6 +203,7 @@ aside {
 
 .size-latest {
     width: 100%;
+    
 }
 
 .ranger {
