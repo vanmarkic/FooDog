@@ -1,66 +1,117 @@
 body {
   position: relative;
- margin: auto;
-  
+  margin: auto;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
+
+/* SOCIAL SIDE */
+
+.social {
+  margin-top: 100px;
+  color: white;
+}
+
+.social a {
+  text-decoration: none;
+  color: white ;
+}
+.socialside {
+  padding: 10px 20px;
+  margin: 2px 0;
+}
+
+.floatright {
+  float: right;
+}
+
+.socialside:hover {
+  background-color: black;
+}
+
+.bgfacebook {
+  background-color: #899DCE;
+}
+
+.bgtwitter {
+  background-color: #60D2F5;
+}
+
+
+.bginsta {
+  background-color: #709CBF;
+}
+
+
 /* .is-vertical-center {
   display: ;
   align-items: center;
 } */
 
-
 /*  SECTION ARTICLES */
 
+.article {
+  padding: 20px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
 .description {
-  margin: auto 0;  
+  margin: auto 0;
 }
 
 .description * {
-  margin : 10px 0;
+  margin: 3px 0;
 }
-
 
 .description a {
   color: #303336;
 }
 
+/* TAGS FONT */
 
-.meta>*:first-child:before {
+.tags a {
+  color: #ff8d6a;
+  font-weight: 900;
+  font-size: 12px;
 
 }
 
-.meta>*:after {
+
+/*  TAGS  SEPARATEUR */
+.meta :after {
   display: inline-block;
-  content: '|';
+  content: "|";
   margin-left: 7px;
   margin-right: 7px;
 }
 
-/* LIGNE QUI BOUGE CATEGORIE */
-.underline {
+      /* TAGS LIGNE QUI BOUGE CATEGORIE */
+.underline > a {
   position: relative;
 }
 
 .underline > a:hover:after {
-  width:100%;
+  width: 100%;
 }
 
 .underline > a:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0%;
-    left: 0;
-    height: 1px;
-    background-color: rgba(26,26,26,.6);
-    bottom: -1px;
-    transition: width .3s linear;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  left: -7px;
+  right: -7px;
+  height: 1px;
+  background-color: rgba(26, 26, 26, 0.6);
+  bottom: -1px;
+  transition: width 0.3s linear;
 }
+
+
+/*  TITRE ARTICLE */
 
 .artitle {
   font-size: 20px;
@@ -72,25 +123,18 @@ body {
   border-bottom: 3px solid #ff8d6a !important;
 }
 
-
-
 .main {
   max-width: 1170px;
-  margin:auto;
+  margin: auto;
 }
 
 #articles {
   display: block;
- margin:auto;
-  
+  margin: auto;
   max-width: 1170px;
-
   padding: 20px;
 }
 
-article {
-  
-}
 
 
 /* TRANSITIONS ANIM SUR TOUTE LA PAGE */
@@ -114,7 +158,7 @@ article {
 /* TITRE PAGE */
 
 .banner {
-  font-family:  'Open Sans';
+  font-family: "Open Sans";
   text-align: center;
   background-color: #f7f7f7;
   margin-top: 20px;
@@ -128,34 +172,32 @@ article {
   text-transform: uppercase;
 }
 
-
-/*  NAVIGATION */  
+/*  NAVIGATION */
 header {
   text-align: center;
-    display: block;
-    position: relative;
-    border-bottom: 1px solid #f2f2f2;
-    margin: 0, 20;
-    min-height: 42px;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-     
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #f2f2f2;
+  margin: 0, 20;
+  min-height: 42px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 a:hover {
-  opacity: 0.7;  
+  opacity: 0.7;
 }
 
- /*  MENU HORIZONTAL */
+/*  MENU HORIZONTAL */
 .menu-item {
-  display: inline;  
+  display: inline;
 }
 
 /* HAUTEUR NAV */
-.main-nav-inner>li>a {
+.main-nav-inner > li > a {
   display: inline-block;
   padding: 0 20px;
   line-height: 60px;
@@ -164,10 +206,10 @@ a:hover {
 
 /* STYLE MENU */
 li.menu-item a {
-font-family: "Open Sans";
-font-weight: 700;
-color: #303336;
-padding: 0 20px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #303336;
+  padding: 0 20px;
 }
 
 li.menu-item a:hover {
@@ -175,15 +217,7 @@ li.menu-item a:hover {
   border-bottom: 3px solid #ff8d6a !important;
 }
 
-
-
-
-
-
-
 /* FLORENTIN */
-
-
 
 .navbar-burger {
   margin-left: 0px;
@@ -206,8 +240,6 @@ li.menu-item a:hover {
     text-align: center;
     font-size: 10px;
   }
-
-
 }
 
 @media only screen and (min-width: 641px) {
@@ -226,13 +258,9 @@ li.menu-item a:hover {
 
 /*--------HEADER--------*/
 
-
-
 /*  */
 
 /* TITRE */
-
-
 
 /* TITRE */
 
