@@ -105,9 +105,19 @@ header{
 
 .share-block{
     height: 50px;
-    border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
-    border-top: rgba(128, 128, 128, 0.787) solid 0.5px;
-    
     margin: 7px;
 }
+
+.subscribe{
+    margin: 7px;
+    padding-bottom: 10px;
+    
+    text-align: center;
+    border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
+}
  
+.previousArticle, .alsoLike{
+    border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
+    padding-bottom: 10px;
+    margin: 7px;
+}
