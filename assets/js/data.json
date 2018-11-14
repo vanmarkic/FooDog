@@ -1,0 +1,77 @@
+{
+  "docs": [
+    {
+      "tagForArticle": ["5be461563286293d80a82491", "5be461573286293d80a82492"],
+      "_id": "5be461c63286293d80a82495",
+      "title": "test title",
+      "text": "random text",
+      "__v": 0
+    },
+    {
+      "tagForArticle": [],
+      "_id": "5be461dd3286293d80a82498",
+      "title": "test title",
+      "text": "random text",
+      "__v": 0
+    },
+    {
+      "tagForArticle": ["5be95ce55398c933fbec4b2b", "5be95ce55398c933fbec4b2a"],
+      "_id": "5be95ce45398c933fbec4b29",
+      "title": "test",
+      "text": "this is my test",
+      "__v": 0
+    },
+    {
+      "tagForArticle": [],
+      "_id": "5be9ee7912250b7babc61952",
+      "imgUrl": "imageURL",
+      "title": "\"text\"",
+      "text": "\"text2\"",
+      "__v": 0
+    },
+    {
+      "tagForArticle": ["5be9ee7a12250b7babc61953", "5be9ee7a12250b7babc61954"],
+      "_id": "5be9f29b0f45b37d2fb87ec0",
+      "imgUrl": "imageURL",
+      "title": "\"text\"",
+      "text": "\"text2\"",
+      "__v": 0
+    },
+    {
+      "tagForArticle": ["5be9ee7a12250b7babc61953", "5be9ee7a12250b7babc61954"],
+      "_id": "5beab3fde482ac16da7948eb",
+      "imgUrl": "",
+      "title": "\"text\"",
+      "text": "\"text2\"",
+      "__v": 0
+    },
+    {
+      "tagForArticle": ["5be9ee7a12250b7babc61953", "5be9ee7a12250b7babc61954"],
+      "_id": "5bead15d84ae341cb6a05123",
+      "imgUrl": "http://res.cloudinary.com/dfpdonjil/image/upload/v1542115676/demo/u2qx1w1o45nwyyq41od1.png",
+      "title": "\"text\"",
+      "text": "\"text2\"",
+      "__v": 0
+    },
+    {
+      "tagForArticle": ["5be9ee7a12250b7babc61953", "5be9ee7a12250b7babc61954"],
+      "_id": "5bead2a8b25d6d1d59272561",
+      "imgUrl": "http://res.cloudinary.com/dfpdonjil/image/upload/v1542116006/demo/ybkrj1fcqoanqzwd4nvx.png",
+      "title": "\"text\"",
+      "text": "\"text2\"",
+      "__v": 0
+    },
+    {
+      "tagForArticle": ["5be9ee7a12250b7babc61954", "5be9ee7a12250b7babc61953"],
+      "_id": "5bead2ceb25d6d1d59272564",
+      "imgUrl": "http://res.cloudinary.com/dfpdonjil/image/upload/v1542116045/demo/uytyz8gpnl5fuhwhobu8.png",
+      "title": "\"text\"",
+      "text": "\"text2\"",
+      "__v": 0
+    }
+  ],
+  "total": 9,
+  "limit": 10,
+  "page": 1,
+  "pages": 1
+}
