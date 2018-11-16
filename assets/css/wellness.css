@@ -10,11 +10,14 @@
 }
 
 
+
+
 #navbarBasicExample form {
   text-align: left;
   margin-left: 20px !important;
    padding: 20px 20px !important;
    box-shadow: none !important;
+  
  }
 
  #navbarBasicExample form input{
@@ -72,6 +75,14 @@
 
 .is-active {
   transition-duration: 500ms;
+}
+
+#navbarBasicExample{
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  opacity: .9;
+
 }
 
 #navbarBasicExample div a {
@@ -153,6 +164,14 @@ footer a {
 } */
 
 /*  SECTION ARTICLES */
+
+.article img {
+  object-fit: cover;
+object-position: 0% 40%;
+width: 100%;
+height: 350px;
+
+}
 
 .article {
   padding: 20px 0;
@@ -271,7 +290,27 @@ aside img {
   line-height: 1;
   font-size: 24px;
   letter-spacing: 3px;
+
 }
+
+/* .banner h3 {
+  display: inline-block;
+  position: relative;
+}
+
+.banner::after {
+  content: '';
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 2px;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;  
+} */
+
+
 
 /*  NAVIGATION */
 header {
