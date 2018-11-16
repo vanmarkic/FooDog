@@ -1,4 +1,3 @@
-if (screen blabla charge ca )
 let header = document.querySelector("header");
 header.innerHTML = 
 `<h2 class="name">FooDog</h2>
