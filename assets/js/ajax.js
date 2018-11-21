@@ -14,7 +14,7 @@ httpreq.onload = function() {
 
     let data = JSON.parse(httpreq.responseText);
 
-    for (let i = 0; i < data.docs.length; i++) {
+        for (let i = 0; i < data.docs.length; i++) {
                               // console.log(data.docs[i].text);
 
                               let article = document.createElement("article");
