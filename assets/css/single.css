@@ -1,0 +1,173 @@
+h1, h2, h3, h4, h5, h6{
+    font-weight:bold;
+}
+
+body{
+    width: 100%;
+    margin: 15px;
+}
+
+.navbar-burger{
+    margin-left: 0px; 
+    display: block;
+}
+.imageSinglePage{
+    object-fit: cover;
+    object-position: -10% 40%;
+    width: 100%;
+    height: 150px;
+}
+.pageTitle{
+    text-align: center;
+    line-height:50px;
+}
+.categories{
+    color: #FF8D6A;
+    text-align: center;
+    font-size: 10px;
+}
+header{
+    background-color: white;
+    border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
+}
+
+
+.mainArticle{
+    margin: 10px;
+}
+
+.sub-image{
+    /* margin: 15px; */
+    width: 100%;
+    background-color: white;
+    border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
+    border-top: rgba(128, 128, 128, 0.787) solid 0.5px;
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.787);
+    
+}
+
+.author{
+    line-height:30px;
+}
+/* .social-icons{
+    margin-top: 5px;
+} */
+
+.searchIcon{
+    margin-top: 13px;
+}
+
+.social-comment{
+    margin: 0;
+    text-align: left;
+    height: 25px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.social-share {
+    background-color: #899DCE;
+    color: white;
+    height: 25px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.social-tweet{
+    background-color: #60D2F5;
+    color: white;
+    height: 25px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.social-pint{
+    background-color: #F74C53;
+    color: white;
+    height: 25px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.share-block{
+    height: 50px;
+    margin: 10px;
+}
+
+.subscribe{
+    margin: 10px;
+    padding-bottom: 10px;
+    
+    text-align: center;
+    border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
+}
+ 
+.previousArticle, .alsoLike{
+    border-bottom: rgba(128, 128, 128, 0.787) solid 0.5px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.block-title::after{
+    content:'';
+    height:4px;
+    background-color:#000000;
+    /* position:absolute; */
+    left:0;
+    right:0;
+    top:50%;
+    margin-top:-2px;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden
+}
+
+@media only screen and (min-width: 600px) {
+    .social-icons > a > img{
+        margin-top: 25px;
+        height: 35px !important;
+        width: 35px !important;
+        /* transform: scale(10%) */
+    }
+    .comment-icon{
+        margin-top: 30px;
+        width: 70px;
+        height: 25px;
+        font-size: 11px;
+    }
+    .authName{
+        margin-bottom: 25px;
+        position: relative; left: 10px; top: -20px; transition: none 0s ease 0s; cursor: move;
+    }
+    .roundFarmer{
+        max-width: 50px;
+        margin-top: 15px;
+    }
+    .imageOther{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .social-icons > a > img{
+        margin-top: 10px;
+        height: 20px !important;
+        width: 20px !important;
+        /* transform: scale(10%) */
+    }
+    .comment-icon{
+        margin-top: 12px;
+        width: 55px;
+        height: 15px;
+        font-size: 7px;
+    }
+    .roundFarmer{
+        display: none;
+        
+    }
+}
+@media only screen and (max-width: 770px) {
+.commentSection{
+    display: none;
+    
+}
+}
