@@ -27,7 +27,7 @@ const post = () => {
         // alert("FILL ALL THE FIELD");
     // } else {
         
-        fetch("http://cors.io?https://foodog.herokuapp.com/articles",
+        fetch("https://foodog.herokuapp.com/articles",
             {
                 method: "POST",
                 mode: 'no-cors', // 'cors' by default
