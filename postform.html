@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,38 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <!-- <script src="main.js"></script> -->
 </head>
+
 <body>
-    
-    <form method="" style="text-align:center" name="postForm" id="postForm">
+    <div></div>
+    <form method="" style="text-align:center" name="postForm" id="postForm" method="post">
         <h1>Tags for the article</h1>
-            <label for="Healthcare">Healthcare</label>
-            <input type="checkbox" name="Healthcare" id="healthcare" value="healthcare" class="atag">
-            <label for="nutrition">Nutrition</label>
-            <input type="checkbox" name="nutrition" id="nutrition" value="nutrition" class="atag">
-            <label for="featured">Featured</label>
-            <input type="checkbox" name="featured" id="featured" value="featured" class="atag">
-            <br>
-            <label for="idArticle">ID</label>
-            <input type="number" name="idArticle" id="idArticle">
-            <br>
-            <label for="titleArticle">Title of the article</label>
-            <input type="text" name="titleArticle" id="titleArticle">
-            <br>
-            <label for="imgUrl">Image URL of the article</label>
-            <input type="text" name="imgUrl" id="imgUrl">
-            <br>
-            <label for="writeArticle">Write your article</label>
-            <textarea name="text" id="writeArticle" cols="30" rows="10"></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Send POST" onclick="post()">
-        </form>
+        <label for="Healthcare">Healthcare</label>
+        <input type="checkbox" name="Healthcare" id="healthcare" value="healthcare" class="atag">
+        <label for="nutrition">Nutrition</label>
+        <input type="checkbox" name="nutrition" id="nutrition" value="nutrition" class="atag">
+        <label for="featured">Featured</label>
+        <input type="checkbox" name="featured" id="featured" value="featured" class="atag">
+        <br>
+        <label for="titleArticle">Title of the article</label>
+        <input type="text" name="titleArticle" id="titleArticle">
+        <br>
+        <label for="imgUrl">Upload an image</label>
+        <input type="file" accept="image/jpg,image/png" id="upload-file" multiple/>
+        <!-- <button id="choose-button">Choose Image</button> -->
+        <br>
+        <label for="writeArticle" class="writeArticle">Write your article</label>
+        <textarea name="text" id="writeArticle"  cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Send POST">
+
+    </form>
+
+
     <script src="./post.js"></script>
 
 
-    
+
 </body>
+
 </html>

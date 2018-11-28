@@ -13,9 +13,9 @@ body{
 }
 .imageSinglePage{
     object-fit: cover;
-    object-position: -10% 40%;
+    object-position: -25% 40%;
     width: 100%;
-    height: 150px;
+    height: 250px;
 }
 .pageTitle{
     text-align: center;
