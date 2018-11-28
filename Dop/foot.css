@@ -1,0 +1,24 @@
+
+
+#socmedia li {
+    display: inline;
+    padding: 20px;
+    color:  #3a3e43;
+}
+ 
+#categories ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+ul {
+    text-align: center;
+}
+
+a {
+    color: #303336;
+}
+
+
+
+

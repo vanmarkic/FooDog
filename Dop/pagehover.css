@@ -1,0 +1,38 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .circle  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid grey;
+    color: grey;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+    
+  }
+
+.circle:hover {
+    opacity: 1;
+    background-color:grey;
+    cursor: pointer;
+    /* color: white; */
+}
+
+.selectedPage{
+    opacity: 1;
+    background-color:grey;
+    cursor: pointer;
+    /* color: white; */
+}
+
+

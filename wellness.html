@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/wellness.css" />
     
+   
+    
+
     <!-- <script src="./assets/js/ajax.js"></script> -->
     <!-- <script src="./assets/js/anim.js"></script> -->
  
@@ -18,9 +21,12 @@
 
   <body>
     <header class="header">
+      <burger-template></burger-template>
 
         <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">         
+            
+          
+          <div class="navbar-brand">         
               <a role="button" class="navbar-burger burger is-flex-tablet" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -32,7 +38,8 @@
 
               <div class="navbar-start">
 
-                <a class="navbar-item burgermenu">
+                <ul class="headerTags">
+                       <a class="navbar-item burgermenu">
                   Community
                 </a>
           
@@ -55,6 +62,11 @@
                       <a class="navbar-item burgermenu">
                           Wellness
                         </a>     
+
+                  
+                </ul>
+
+           
                       
                 
               </div>          
@@ -66,64 +78,29 @@
                     </a>                 
                   </span>
                 
-              </form><!--#search form -->
+              </form>
               
            
             </div>
           </nav>
         </header>
-
-
- <!-- //////////////////////   TITLE + MENU //////////////////////// -->
+        <!-- //////////////////////   TITLE + MENU //////////////////////// -->
 
 
    
-
     <div class="banner">
       <h3>WELLNESS</h3></div>
+    </div>
 
     <div class="main columns">
 
-
-
-        <div id="articles" class="column is-8 articles">
+        <div id="articles" class="articles column is-8">
+          </div>
    
 
 
-<!-- //////////////////////   ARTICLES //////////////////////// -->
-<!-- 
-          <article class="article columns">
-              <img class="column is-half" src="http://digest.thefarmersdog.com/wp-content/uploads/2018/06/360x250x13525582_300430076968318_1539766279_n-360x250.jpg.pagespeed.ic.UykTouv3va.webp" alt="dogs"/>
-    
-              <div class="description column is-half">
-                <div class="tags">
-                  <div class="meta">
-                    <div class="underline">
-                      <a class="uppercase" href="wellness.html"> wellness </a>
-                    </div>
-                  </div>
-    
-                  <div class="meta">
-                    <div class="underline">
-                      <a class="uppercase" href="wellness.html"> wellness </a>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="artitle">
-                  <a href="single.html" class="uppercase">TEN TIPS FOR KEEPING YOUR DOG SAFE THIS July 4TH</a>
-                </div>
-    
-                <p class="extract">
-                  Fourth of July is synonymous with a few notable activities:
-                  barbecuing with family and friends, soaking up the sun, and
-                </p>
-    
-                <a href="#share" class="uppercase">Share</a>
-              </div>
-            </article>
-   -->
-      </div>
+
+      
 
       <aside class="column is-hidden-mobile">
         
@@ -162,49 +139,16 @@
       </aside>
     </div>
 
-    <footer>
+
+        <footer-template></footer-template>
+        <script type="text/javascript" src="./assets/js/ajax.js"></script>
+        <script type="text/javascript" src="./assets/js/headerComponent.js"></script>
+        <script type="text/javascript" src="./assets/js/footerComp.js""></script>
+        <script type="text/javascript" src="./assets/js/burgermenu.js""></script>
+        <script type="text/javascript" src="./assets/js/anim.js""></script>
        
-        <div id="socmedia">
-
-        <ul>
-            <a href="https://www.facebook.com" target="blank" rel="nofollow">
-                <li>
-                    <i class="fab fa-facebook-f"></i>
-                    
-                </li>
-            </a>
-
-            <a href="https://uk.linkedin.com" target="_blank" rel="nofollow">
-                <li>
-                    <i class="fab fa-linkedin-in"></i>
-                   
-                </li>
-            </a>
-
-            <a href="https://twitter.com" target="_blank" rel="nofollow">
-                <li>
-                    <i class="fab fa-twitter"></i>
-                    
-                </li>
-            </a>
-
-        </ul>
-    </div>
-
-    <div id="categories">
-            <ul>
-
-                <li><a href="#communities" target="_blank">Community</a></li>
-                <li><a href="#feaTure" target="_blank">Feature</a></li>
-                <li><a href="#lifeStyle" target="_blank">Lifestyle</a></li>
-                <li><a href="#nutrition" target="_blank">Nutrition</a></li>
-                <li><a href="#wellNess" target="_blank">Wellness</a></li>
-            </ul>
-
-        </div>
-
-<footer>
-  <script src="./assets/js/headerComponent.js"></script>
   </body>
+
+
 
 </html>

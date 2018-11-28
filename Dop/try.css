@@ -1,0 +1,52 @@
+/*.main {
+    display: flex;
+    flex-flow: row;
+    width: 80vw;
+    height: 70vh;
+   background-color:  green;
+}
+.left {
+
+    width: 20vw;
+    height: 30vh;
+   background-color: blue;
+  margin: 5px;
+}
+.right {
+    width: 20vw;
+    height: 30vh;
+   background-color:yellow;
+  margin: 5px;
+
+}
+.secleft{
+    width: 20vw;
+    height: 30vh;
+   background-color:red;
+  margin: 5px;
+
+}
+.secright {
+    width: 20vw;
+    height: 30vh;
+   background-color:orangered;
+  margin: 5px;
+
+}*/
+
+
+.main-box {
+    background-color: blue;
+    border: 2px solid black;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: red;
+    border: 2px solid black;
+    width: 40%;
+    margin: 10px;
+}

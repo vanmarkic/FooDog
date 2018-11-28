@@ -1,0 +1,10 @@
+div.dropdown ul {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+div.dropdown:hover {
+    overflow: visible;
+}

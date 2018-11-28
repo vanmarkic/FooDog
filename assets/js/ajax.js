@@ -1,7 +1,8 @@
 //Create the XHR Object
 let httpreq = new XMLHttpRequest();
-let articles = document.querySelector(".articles");
+let artiFoo = document.querySelector(".articles");
 console.log(articles);
+
 
 //Call the open function, GET-type of request, url, true-asynchronous
 httpreq.open("GET", "http://foodog.herokuapp.com/articles", true);
@@ -14,13 +15,15 @@ httpreq.onload = function() {
 
     let data = JSON.parse(httpreq.responseText);
 
-        for (let i = 0; i < data.docs.length; i++) {
+        
+          for (let i = 0; i < data.docs.length; i++) {
                               // console.log(data.docs[i].text);
+                              if (data.docs[i].tagForArticle.includes("community")) {
 
                               let article = document.createElement("article");
                               article.classList.add("article", "columns");
 
-                              articles.appendChild(article);
+                              artiFoo.appendChild(article);
                               article.innerHTML = /*html*/ `
                                               <img class="column is-half" src="${data.docs[i].imgUrl}" alt="dogs" />
 
@@ -53,6 +56,7 @@ httpreq.onload = function() {
                                                                                             </div>`;
                                                                                               }
                             }
+                          }
   } else {
     console.log("error");
     articles.innerText = "Sorry we couldn't reach the server";
