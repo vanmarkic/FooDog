@@ -1,7 +1,7 @@
 //Create the XHR Object
 let httpreq = new XMLHttpRequest();
 let artiFoo = document.querySelector(".articles");
-console.log(articles);
+// console.log(articles);
 
 
 //Call the open function, GET-type of request, url, true-asynchronous
@@ -11,14 +11,14 @@ httpreq.onload = function() {
   //check if the status is 200(means everything is okay)
   if (this.status === 200) {
     //return server response as an object with JSON.parse
-    console.log("200");
+    // console.log("200");
 
     let data = JSON.parse(httpreq.responseText);
 
         
           for (let i = 0; i < data.docs.length; i++) {
                               // console.log(data.docs[i].text);
-                              if (data.docs[i].tagForArticle.includes("community")) {
+                              if (data.docs[i].tagForArticle.includes("wellness")) {
 
                               let article = document.createElement("article");
                               article.classList.add("article", "columns");
@@ -51,7 +51,7 @@ httpreq.onload = function() {
                                                                       document.querySelector(`#tags${i}`).innerHTML = /*html*/ `
                                                                                                     <div class="meta">
                                                                                                         <div class="underline">
-                                                                                                            <a class="uppercase" href="wellness.html">${data.docs[i].tagForArticle[j]}</a>
+                                                                                                            <a class="uppercase" href="${data.docs[i].tagForArticle[j]}.html">${data.docs[i].tagForArticle[j]}</a>
                                                                                               </div>
                                                                                             </div>`;
                                                                                               }

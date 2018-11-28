@@ -1,113 +1,88 @@
 articles = "";
 
+// class FeaturedPost extends HTMLElement {
+//   constructor() {
+//     super();
 
-const choppeSaMere = async () => {
-  let response = await fetch("https://foodog.herokuapp.com/articles", {
-    method: "GET"
-  });
-  reponse = await response.json();
- 
-  for (let i = 0; i < 3; i++) {
-            console.log(reponse.docs[i]._id)
-            articles += /*html*/ `
-                    <a href="article.html?id=${reponse.docs[i]._id}"><section class="topArticle col-lg-12 d-flex">
-                        <figure class="col-lg-5">
-                            <img class="img-responsive" src="${reponse.docs[i].imgUrl}"/>
-                        </figure>
-                        <article class="offset-lg-1 col-lg-6 d-flex">
-                            <p>${reponse.docs[i].title}</p>
-                        </article>
-                    </section></a>`;
-        }
+//     let shadowDom = this.attachShadow({
+//       mode: "open"
+//     });
 
-};
+//     let linkStyle = document.createElement("link");
+//     linkStyle.setAttribute("rel", "stylesheet");
+//     linkStyle.setAttribute("href", "CSS/footer.css");
 
-choppeSaMere();
+//     let linkBoots = document.createElement("link");
+//     linkBoots.setAttribute("rel", "stylesheet");
+//     linkBoots.setAttribute(
+//       "href",
+//       "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+//     );
 
+//     let linkFont = document.createElement("link");
+//     linkFont.setAttribute("rel", "stylesheet");
+//     linkFont.setAttribute(
+//       "href",
+//       "https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans"
+//     );
 
+//     let linkfontawesome = document.createElement("link");
+//     linkfontawesome.setAttribute("rel", "stylesheet");
+//     linkfontawesome.setAttribute(
+//       "href",
+//       "https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+//     );
 
-class FeaturedPost extends HTMLElement {
-  constructor() {
-    super();
+//     let footer = document.createElement("div");
+//     footer.setAttribute("class", "container-fluid");
+//     footer.innerHTML = /*html*/ `
+//             ${articles}
+//         `;
 
-    let shadowDom = this.attachShadow({
-      mode: "open"
-    });
-
-    let linkStyle = document.createElement("link");
-    linkStyle.setAttribute("rel", "stylesheet");
-    linkStyle.setAttribute("href", "CSS/footer.css");
-
-    let linkBoots = document.createElement("link");
-    linkBoots.setAttribute("rel", "stylesheet");
-    linkBoots.setAttribute(
-      "href",
-      "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    );
-
-    let linkFont = document.createElement("link");
-    linkFont.setAttribute("rel", "stylesheet");
-    linkFont.setAttribute(
-      "href",
-      "https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans"
-    );
-
-    let linkfontawesome = document.createElement("link");
-    linkfontawesome.setAttribute("rel", "stylesheet");
-    linkfontawesome.setAttribute(
-      "href",
-      "https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    );
-
-    let footer = document.createElement("div");
-    footer.setAttribute("class", "container-fluid");
-    footer.innerHTML = /*html*/ `
-            ${articles}
-        `;
-
-    shadowDom.appendChild(linkStyle);
-    shadowDom.appendChild(linkBoots);
-    shadowDom.appendChild(linkFont);
-    shadowDom.appendChild(linkfontawesome);
-    shadowDom.appendChild(footer);
-  }
-}
-customElements.define("featured-post", FeaturedPost);
+//     shadowDom.appendChild(linkStyle);
+//     shadowDom.appendChild(linkBoots);
+//     shadowDom.appendChild(linkFont);
+//     shadowDom.appendChild(linkfontawesome);
+//     shadowDom.appendChild(footer);
+//   }
+// }
+// customElements.define("featured-post", FeaturedPost);
 
 class Footer extends HTMLElement {
   constructor() {
-    super();
+        super();
 
-    let shadowDom = this.attachShadow({
-      mode: "open"
-    });
+    // let shadowDom = this.attachShadow({
+    //   mode: "open"
+    // });
 
-            let linkStyle = document.createElement("link");
-            linkStyle.setAttribute("rel", "stylesheet");
-            linkStyle.setAttribute("href", "./assets/css/desktopFooter.css");
+    // let linkStyle = document.createElement("link");
+    // linkStyle.setAttribute("rel", "stylesheet");
+    // linkStyle.setAttribute("href", "./assets/css/desktopFooter.css");
 
-    let linkBoots = document.createElement("link");
-    linkBoots.setAttribute("rel", "stylesheet");
-    linkBoots.setAttribute(
-      "href",
-      "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    );
+    // let linkBoots = document.createElement("link");
+    // linkBoots.setAttribute("rel", "stylesheet");
+    // linkBoots.setAttribute(
+    //   "href",
+    //   "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    // );
 
-    let linkFont = document.createElement("link");
-    linkFont.setAttribute("rel", "stylesheet");
-    linkFont.setAttribute(
-      "href",
-      "https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans"
-    );
+    // let linkFont = document.createElement("link");
+    // linkFont.setAttribute("rel", "stylesheet");
+    // linkFont.setAttribute(
+    //   "href",
+    //   "https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans"
+    // );
 
-    let linkfontawesome = document.createElement("link");
-    linkfontawesome.setAttribute("rel", "stylesheet");
-    linkfontawesome.setAttribute(
-      "href",
-      "https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    );
+    // let linkfontawesome = document.createElement("link");
+    // linkfontawesome.setAttribute("rel", "stylesheet");
+    // linkfontawesome.setAttribute(
+    //   "href",
+    //   "https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    // );
 
     let footer = document.createElement("div");
+    document.querySelector("footer-template").appendChild(footer);
     footer.setAttribute("class", "container-fluid");
     footer.innerHTML = /*html*/ `
              <div id="desktop-footer">
@@ -246,11 +221,52 @@ class Footer extends HTMLElement {
 
       <div><p>2017 &copy; The Farmer's Dog</p></div>
     </div>`;
-    shadowDom.appendChild(linkStyle);
- 
-    shadowDom.appendChild(linkFont);
-    shadowDom.appendChild(linkfontawesome);
-    shadowDom.appendChild(footer);
+
+
+    //   let reponse =[];
+
+    // const choppeSaMere = async () => {
+    //   let response = await fetch("https://foodog.herokuapp.com/articles", {
+    //     method: "GET"
+    //   });
+    //  reponse = await response.json();
+  
+    // };
+
+    // choppeSaMere().then((reponse) => {
+    //   for (let i = 0; i < 2; i++) {
+    //     // console.log(data.docs[i].text);
+    //     document.querySelector(".featured-postContainer");
+    //     let popular = document.createElement("div");
+    //     // article.classList.add("article", "columns");
+
+    //     console.log(document.querySelector(".featured-postContainer"));
+    //     document.querySelector(".featured-postContainer").appendChild(popular);
+    //     popular.innerHTML += /*html*/ `
+    //                 <img class="column is-half" src="${
+    //                   reponse.docs[i].imgUrl
+    //                 }" alt="dogs" />
+
+    //                 <div class="description column is-half">
+                 
+
+    //                   <div class="artitle">
+    //                     <a href="single.html" class="uppercase">${
+    //                       reponse.docs[i].title
+    //                     }</a>
+    //                   </div>                  
+
+         
+    //                 </div>`;
+    //   }
+
+    // });
+
+    // shadowDom.appendChild(linkStyle);
+
+    // shadowDom.appendChild(linkFont);
+    // shadowDom.appendChild(linkfontawesome);
+    // shadowDom.appendChild(footer);
   }
 }
 
