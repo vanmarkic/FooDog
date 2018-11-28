@@ -1,10 +1,18 @@
+
 /* body {
    margin:  20px;
 } */
 
+footer-template {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #desktop-footer {
+  font-family: "Open Sans";
   display: flex;
   /* height: 40vw; */
+  flex-wrap: wrap;
 
   background-color: #3a3e43;
   padding-top: 30px;
@@ -12,10 +20,11 @@
   margin: 0px 0;
   align-content: space-between;
 }
-/***********************Categories***********************/
+/***********************footcat***********************/
 
 
-#categories {
+#footcat {
+  font-family: "Open Sans";
    /* display: flex; */
   width: 33vw;
   /* margin: 20px; */
@@ -23,7 +32,7 @@
   
 }
 
-#categories ul {
+#footcat ul {
     display: inline-block;
     margin-right: 10px;
     padding-left: 10px;
@@ -56,7 +65,7 @@ h6 {
   color: white;
 }
 
-#categories a {
+#footcat a {
   color: white;
   font-size: 12px;
   text-align: left;
@@ -64,15 +73,7 @@ h6 {
 /****************Featured Post*************************/
 
 .featured-postContainer {
-  /* display: flex;
-  flex-direction: column; */
-  /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 0px;
-    row-gap: 5px; */
-  /* margin-right: 5px;
-  margin-left: 5px;
-  border: 2px solid blue; */
+
   width: 33vw;
   padding-top: 20px;
 }
@@ -101,28 +102,38 @@ h6 {
  .post-item {
  display: flex;
  justify-content: center;
- background-color: blue;
    
     flex-wrap: wrap;
  
-} 
-
-.text {
-  
-  background-color: red;
-    border: 2px solid black;
-    width: 40%;
-    margin: 10px;
-   
 }
 
-.featImg {
-  
-  background-color: red;
-    border: 2px solid black;
-    width: 40%;
-    margin: 10px;
- } 
+.post-item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-item .popImg {
+flex-basis: 40%;
+} 
+
+.post-item h3 {
+color: white;
+  } 
+
+.post-item .popImg img {
+object-fit: cover;
+object-position: 0% 40%;
+height: 100px;
+width: 100%;
+max-width: 100px;
+
+}
+
+
+.text {  
+    width: 40%
+   
+}
 
 /*****************Hover border*******************************/
 .featured-postContainer h6:hover {

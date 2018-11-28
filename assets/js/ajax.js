@@ -1,3 +1,6 @@
+// let url = new URLSearchParams(window.location.search);
+// url = url.get('id');
+
 //Create the XHR Object
 let httpreq = new XMLHttpRequest();
 let artiFoo = document.querySelector(".articles");
@@ -17,6 +20,7 @@ httpreq.onload = function() {
 
         
           for (let i = 0; i < data.docs.length; i++) {
+                              console.log(data.docs[i]._id);
                               // console.log(data.docs[i].text);
                               if (data.docs[i].tagForArticle.includes("wellness")) {
 

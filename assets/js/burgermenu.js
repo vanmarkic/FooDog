@@ -1,27 +1,4 @@
-// categBurger = "";
 
-// let reponse = [];
-
-// const choppeCategories = async () => {
-//   let response = await fetch("https://foodog.herokuapp.com/articles", {
-//     method: "GET"
-//   });
-//   reponse = await response.json();
-//   console.log(reponse.docs[0].tagForArticle[0]);
-//   console.log(reponse);
-
-//   for (i = 0; i < reponse.docs.length; i++) {
-
-// //     const categories = .map()
-//     console.log(reponse.docs[i].tagForArticle);
-
-// //     cateBurger += /*html*/ ``
-
-//   };
-
-// }
-
-// choppeCategories();
 
 class Burger extends HTMLElement {
   constructor() {
@@ -45,31 +22,10 @@ class Burger extends HTMLElement {
 
     <div class="navbar-start">
 
-        <ul class="headerTags">
+    
+     
 
-      <a class="navbar-item burgermenu">
-        Community
-      </a>
 
-      <a class="navbar-item burgermenu" >
-        Featured
-      </a>
-               
-        <a class="navbar-item burgermenu">
-          Lifestyle
-        </a>
-        
-        <a class="navbar-item burgermenu">
-            Nutrition
-          </a>     
-      
-          <a class="navbar-item burgermenu">
-            Uncategorized
-          </a>     
-      
-            <a class="navbar-item burgermenu">
-                Wellness
-              </a>     
   </ul>
       
     </div>          
@@ -88,7 +44,6 @@ class Burger extends HTMLElement {
   
 
 `;
-   
   }
 }
 
