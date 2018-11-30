@@ -357,6 +357,17 @@ li.menu-item a:hover {
   border-bottom: 3px solid #ff8d6a !important;
 }
 
+.activeHeader {
+  text-decoration: none !important;
+  border-bottom: 3px solid #ff8d6a !important;
+}
+
+.activeBurger {
+  text-decoration: none !important;
+  border-bottom: 3px solid #ff8d6a !important;
+}
+
+
 @media only screen and (max-width: 640px) {
   .imageSinglePage {
     object-fit: cover;

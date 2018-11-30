@@ -20,13 +20,13 @@ class Burger extends HTMLElement {
 
   <div id="navbarBasicExample" class="navbar-menu">
 
-    <div class="navbar-start">
+    <div id="catlist" class="navbar-start">
 
     
      
 
 
-  </ul>
+
       
     </div>          
    
