@@ -1,18 +1,55 @@
 url = new URLSearchParams(window.location.search);
 const urlId = url.get('id');
 
+// const choppeCategories = async () => {
+//             let response = await fetch("https://foodog.herokuapp.com/articles", {
+//               method: "GET"
+//             });
+//             reponse = await response.json();
+          
+//             let arr = [];
+          
+//             for (i = 0; i < reponse.docs.length; i++) {
+//               reponse.docs[i].tagForArticle.forEach(e => {
+//                 if (!arr.includes(e)) {
+//                   arr.push(e);
+//                 }
+//               });
+//             }
+          
+//             arr.forEach(element => {
+//               let burgertag = document.createElement("a");
+//               burgertag.id = element;
+//               burgertag.classList.add("burgermenu", "navbar-item");
+          
+//               let headerTag = document.createElement("li");
+//               headerTag.id = element;
+//               headerTag.classList.add("menu-item");
+          
+//               burgertag.innerHTML += /*html*/ `
+//           ${element.toUpperCase()}
+//           `;
+          
+//               headerTag.innerHTML += /*html*/ `
+//           <a id="${element}" href="#" class="">${element.toUpperCase()}</a>    
+//           `;
+          
+             
+             
+//             });
+//           };
 
+let reponse = [];
 
+const choppeArticle = async () => {
+            let response = await fetch(`https://foodog.herokuapp.com/articles?`, {
+                        method: "GET"
+            });
+            reponse = await response.json();
 
-console.log(urlId);
-
-
-let fetchedArticles = new Array();
-
-
-const choppeArticle = () => {
-
-
+            console.log(reponse.docs);
+            
+            let fetchedArticles = new Array();     
 
             fetch("https://foodog.herokuapp.com/articles").then(res => res.json())
             .then(data => data.docs.forEach(element => {fetchedArticles.push(element)}));    
@@ -22,21 +59,23 @@ const choppeArticle = () => {
 
             fetch("https://foodog.herokuapp.com/articles?page=3").then(res => res.json())
             .then(data => data.docs.forEach(element => {fetchedArticles.push(element)}));          
-                                       
+            let article = new Array();     
+            article = fetchedArticles.filter(art => art._id === urlId.toString());
+
+            console.log(urlId.toString());
+
+            console.log(fetchedArticles);
+
+            console.log(fetchedArticles[0]);
 
           
 
 }
 
-choppeArticle(urlId)
+choppeArticle();
 
-console.log(fetchedArticles);
+ console.log(fetchedArticles);
 
-let article = fetchedArticles.filter(art => art[_id].includes(urlId));
-
-
-
-console.log(article);
 
 
 
